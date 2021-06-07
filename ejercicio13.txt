@@ -1,0 +1,40 @@
+Algoritmo ejercicio13
+	
+	Hacer
+	 
+	Mostrar "Ingrese el valor del primer numero: "
+	Leer numero1
+	
+	Mostrar "Ingrese el valor del segundo numero: "
+	Leer numero2
+	
+	
+	Mostrar "Ingrese el inciso la operacion que desea realizar: "
+	Mostrar "a = suma "
+	Mostrar "b = dividir"
+	Mostrar "c = salir"
+	Leer inciso
+	
+	Segun inciso Hacer
+		"a":
+			suma = numero1 + numero2
+			Mostrar "La suma es: ", suma
+			
+		"b": 
+			si numero2 = 0 Entonces
+				Mostrar "No se puede dividir entre 0"
+			SiNo
+				division = numero1/numero2
+				Mostrar "La division de ", numero1 " entre ", numero2," es de ", division
+			FinSi
+			
+		"c":
+			Mostrar "Adios"
+			
+		De Otro Modo:
+			Mostrar "Error, opcion no valida"
+	FinSegun
+	
+	Hasta Que inciso = "c"
+
+FinAlgoritmo
